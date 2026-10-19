@@ -1,0 +1,5 @@
+[
+  { "title": "Ember Drift (SAMPLE)", "description": "Sample card: a top-down 2D racer prototype. Replace with your own project.", "tech": ["Phaser", "TypeScript", "Tiled"], "repo": "", "demo": "" },
+  { "title": "Hollow Signal (SAMPLE)", "description": "Sample card: a 3D atmospheric exploration concept. Replace with your own project.", "tech": ["Three.js", "WebGL", "Blender"], "repo": "", "demo": "" },
+  { "title": "Relay Arena (SAMPLE)", "description": "Sample card: a real-time multiplayer arena prototype. Replace with your own project.", "tech": ["Node.js", "WebSockets", "Canvas"], "repo": "", "demo": "" }
+]
