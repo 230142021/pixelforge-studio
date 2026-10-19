@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelForge Studio | We forge worlds worth exploring</title>
+<meta name="description" content="PixelForge Studio is an independent game development company (fictional demo site).">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23c8ff2e'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%231a1a1f'/%3E%3Crect x='16' y='16' width='8' height='8' fill='%237c4dff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <a class="logo" href="#top" aria-label="PixelForge Studio home">
+    <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" fill="#c8ff2e"/><rect x="6" y="6" width="12" height="12" fill="#1a1a1f"/><rect x="18" y="18" width="12" height="12" fill="#7c4dff"/><rect x="18" y="6" width="6" height="6" fill="#1a1a1f"/></svg>
+    <span>PixelForge <b>Studio</b></span>
+  </a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#about">About</a></li><li><a href="#creator">Creator</a></li><li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Portfolio</a></li><li><a href="#process">Process</a></li>
+    <li><a class="btn small" href="#contact">Book a consultation</a></li>
+  </ul></nav>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <p class="kicker">Independent game studio</p>
+  <h1>We forge worlds worth exploring.</h1>
+  <p class="lead">PixelForge Studio designs and builds games, browser experiences and multiplayer prototypes, from first sketch to playable build.</p>
+  <div class="cta"><a class="btn" href="#contact">Book a consultation</a><a class="btn ghost" href="#portfolio">See sample projects</a></div>
+  <svg class="hero-art" viewBox="0 0 400 240" role="img" aria-label="Abstract pixel landscape illustration with a violet moon over lime hills">
+    <rect width="400" height="240" fill="#1d1d24"/><circle cx="290" cy="70" r="40" fill="#7c4dff"/>
+    <path d="M0 200 L60 150 L120 190 L200 120 L280 180 L340 140 L400 190 V240 H0Z" fill="#2a2a34"/>
+    <path d="M0 225 L80 185 L160 215 L250 170 L330 210 L400 190 V240 H0Z" fill="#c8ff2e"/>
+  </svg>
+</section>
+
+<section id="about" class="sec">
+  <h2>About the studio</h2>
+  <div class="cols">
+    <div><p>PixelForge Studio is a small team that treats every game as a craft project. Our mission: ship playable work early, test it with real players, and refine it until it feels right.</p>
+    <p class="note">Demo note: PixelForge is a fictional company; the site was created by Arsen Torobekov. Edit this copy in <code>public/index.html</code>.</p>
+    <ul class="caps"><li>Prototyping in days, not months</li><li>Web-first delivery</li><li>Clean, documented code</li></ul></div>
+    <div class="team" aria-label="Team">
+      <figure><svg viewBox="0 0 120 120" role="img" aria-label="Placeholder portrait for team member"><rect width="120" height="120" fill="#2a2a34"/><circle cx="60" cy="46" r="20" fill="#7c4dff"/><rect x="25" y="74" width="70" height="46" fill="#7c4dff"/></svg><figcaption>Name Surname<br>Lead Designer (placeholder)</figcaption></figure>
+      <figure><svg viewBox="0 0 120 120" role="img" aria-label="Placeholder portrait for team member"><rect width="120" height="120" fill="#2a2a34"/><circle cx="60" cy="46" r="20" fill="#c8ff2e"/><rect x="25" y="74" width="70" height="46" fill="#c8ff2e"/></svg><figcaption>Name Surname<br>Engineer (placeholder)</figcaption></figure>
+      <figure><svg viewBox="0 0 120 120" role="img" aria-label="Placeholder portrait for team member"><rect width="120" height="120" fill="#2a2a34"/><circle cx="60" cy="46" r="20" fill="#9a9aa8"/><rect x="25" y="74" width="70" height="46" fill="#9a9aa8"/></svg><figcaption>Name Surname<br>Artist (placeholder)</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="creator" class="sec">
+  <h2>Создатель сайта</h2>
+  <div class="cols">
+    <div>
+      <h3>Арсен Торобеков</h3>
+      <p>Разработчик и автор этого сайта. Создаёт игры и интерактивные проекты. Ниже его работы на GitHub.</p>
+      <ul class="caps">
+        <li><a href="https://github.com/230142021" target="_blank" rel="noopener noreferrer">Профиль на GitHub</a></li>
+        <li><a href="https://github.com/230142021/MiniAgario" target="_blank" rel="noopener noreferrer">Репозиторий MiniAgario</a></li>
+        <li><a href="https://github.com/230142021/battleshipAI" target="_blank" rel="noopener noreferrer">Репозиторий battleshipAI</a></li>
+      </ul>
+    </div>
+    <p class="note">Ссылки на играбельные версии проектов добавляются в <code>public/data/projects.json</code> (поле <code>demo</code>).</p>
+  </div>
+</section>
+
+<section id="services" class="sec">
+  <h2>Services</h2>
+  <ul class="grid services">
+    <li><h3>Game design</h3><p>Concepts, core loops, level and systems design, documented for your team.</p></li>
+    <li><h3>2D and 3D development</h3><p>Production-ready gameplay code, tools and pipelines for 2D and 3D titles.</p></li>
+    <li><h3>Browser games</h3><p>Fast-loading games that run on any device with no install.</p></li>
+    <li><h3>Multiplayer prototypes</h3><p>Real-time networking proofs of concept you can playtest with friends.</p></li>
+    <li><h3>VR and interactive experiences</h3><p>Immersive demos and installations built around comfort and clarity.</p></li>
+  </ul>
+</section>
+
+<section id="portfolio" class="sec">
+  <h2>Portfolio</h2>
+  <p class="note">The first two projects are real (by Arsen Torobekov); the rest are labelled samples. Replace them by editing <code>public/data/projects.json</code>.</p>
+  <ul class="grid" id="projects" aria-live="polite"><li>Loading projects...</li></ul>
+</section>
+
+<section id="gallery" class="sec">
+  <h2>Concept gallery</h2>
+  <p class="note">Original abstract illustrations, not screenshots of released games.</p>
+  <div class="grid gallery">
+    <figure><svg viewBox="0 0 300 180" role="img" aria-label="Violet pixel moon above lime hills"><rect width="300" height="180" fill="#1d1d24"/><circle cx="220" cy="55" r="30" fill="#7c4dff"/><path d="M0 150 L80 100 L150 140 L300 90 V180 H0Z" fill="#c8ff2e"/></svg><figcaption>Moonlit hills: mood concept</figcaption></figure>
+    <figure><svg viewBox="0 0 300 180" role="img" aria-label="Grid of lime and violet tiles forming a maze"><rect width="300" height="180" fill="#1d1d24"/><path d="M30 30h240v20H70v30h200v20H30V80h0zM30 120h200v30H30z" fill="#7c4dff"/><rect x="240" y="120" width="30" height="30" fill="#c8ff2e"/></svg><figcaption>Tile maze: level layout study</figcaption></figure>
+    <figure><svg viewBox="0 0 300 180" role="img" aria-label="Stack of lime cubes in isometric view"><rect width="300" height="180" fill="#1d1d24"/><path d="M150 40l50 28v56l-50 28-50-28V68z" fill="#c8ff2e"/><path d="M150 40l50 28-50 28-50-28z" fill="#e6ff8f"/><path d="M150 96v56l-50-28V68z" fill="#8fb81a"/></svg><figcaption>Isometric block: 3D art direction</figcaption></figure>
+  </div>
+</section>
+
+<section id="process" class="sec">
+  <h2>How we work</h2>
+  <ol class="steps">
+    <li><h3>Discover</h3><p>We talk through goals, audience, scope and budget.</p></li>
+    <li><h3>Prototype</h3><p>A playable slice proves the core idea early.</p></li>
+    <li><h3>Build</h3><p>Iterative sprints with a build you can play every week.</p></li>
+    <li><h3>Launch</h3><p>Testing, polish, release and handover with documentation.</p></li>
+  </ol>
+</section>
+
+<section id="contact" class="sec">
+  <h2>Book a consultation</h2>
+  <form id="form" novalidate>
+    <div class="f"><label for="name">Full name *</label><input id="name" name="name" autocomplete="name" required maxlength="100"><span class="err" id="err-name" role="alert"></span></div>
+    <div class="f"><label for="email">Email *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="150"><span class="err" id="err-email" role="alert"></span></div>
+    <div class="f"><label for="contact">Telegram username or other contact</label><input id="contact" name="contact" maxlength="100"><span class="err" id="err-contact" role="alert"></span></div>
+    <div class="f"><label for="projectType">Project type *</label>
+      <select id="projectType" name="projectType" required><option value="">Choose one</option><option>Game design</option><option>2D game</option><option>3D game</option><option>Browser game</option><option>Multiplayer prototype</option><option>VR / interactive experience</option><option>Other</option></select><span class="err" id="err-projectType" role="alert"></span></div>
+    <div class="f"><label for="budget">Approximate budget</label>
+      <select id="budget" name="budget"><option value="">Prefer not to say</option><option>Under $5,000</option><option>$5,000 - $15,000</option><option>$15,000 - $50,000</option><option>$50,000+</option><option>Not sure yet</option></select><span class="err" id="err-budget" role="alert"></span></div>
+    <div class="f"><label for="timeline">Desired timeline</label><input id="timeline" name="timeline" maxlength="100" placeholder="e.g. prototype in 6 weeks"><span class="err" id="err-timeline" role="alert"></span></div>
+    <div class="f wide"><label for="message">Project description * <small id="count">0/2000</small></label><textarea id="message" name="message" rows="6" required minlength="20" maxlength="2000"></textarea><span class="err" id="err-message" role="alert"></span></div>
+    <div class="trap" aria-hidden="true"><label>Leave empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="f wide check"><input id="consent" name="consent" type="checkbox" required><label for="consent">I agree that PixelForge Studio may process the information I submit to respond to my request. *</label><span class="err" id="err-consent" role="alert"></span></div>
+    <div class="wide"><button class="btn" id="submit" type="submit">Send request</button><p id="status" role="status" aria-live="polite"></p></div>
+  </form>
+</section>
+</main>
+
+<footer>
+  <p><strong>PixelForge Studio</strong>: fictional demo company.</p>
+  <p>Contact: <a href="mailto:hello@example.com">toroarsen80@gmail.com</a>  | Bishkek, Kyrgyzstan </p>
+  <p><a href="https://github.com/230142021" rel="noopener">GitHub (Арсен Торобеков)</a> | <a href="t.me/pxstudiobot." rel="noopener">Telegram</a> | 
