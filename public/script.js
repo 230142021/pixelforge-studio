@@ -62,4 +62,19 @@
       .catch(function () { status.className = 'bad'; status.textContent = 'Network error. Check your connection and try again.'; })
       .then(function () { btn.disabled = false; btn.textContent = 'Send request'; });
   });
+
+  // Gallery lightbox
+  var shots = Array.prototype.slice.call(document.querySelectorAll('.shot')), box = document.getElementById('lightbox'), cur = 0, opener = null;
+  function show(i) {
+    cur = (i + shots.length) % shots.length;
+    document.getElementById('lb-img').innerHTML = shots[cur].querySelector('svg').outerHTML;
+    document.getElementById('lb-cap').textContent = shots[cur].getAttribute('data-cap');
+  }
+  shots.forEach(function (b, i) { b.addEventListener('click', function () { opener = b; show(i); box.showModal(); }); });
+  document.getElementById('lb-prev').addEventListener('click', function () { show(cur - 1); });
+  document.getElementById('lb-next').addEventListener('click', function () { show(cur + 1); });
+  document.getElementById('lb-close').addEventListener('click', function () { box.close(); });
+  box.addEventListener('click', function (e) { if (e.target === box) box.close(); });
+  box.addEventListener('close', function () { if (opener) opener.focus(); });
+  box.addEventListener('keydown', function (e) { if (e.key === 'ArrowLeft') show(cur - 1); if (e.key === 'ArrowRight') show(cur + 1); });
 })();
